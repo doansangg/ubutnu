@@ -1,5 +1,5 @@
 -------------Lab 2-----------------
-
+```
 server {
 		listen 80
 		server_name book.com www.book.com;
@@ -13,8 +13,10 @@ server {
 		    proxy_pass http://localhost:8000;
 		}
 }
+```
 -------------------------------------------
 -------------Lab 2 config-----------------
+```
 version: "3"
 services:
   client:
@@ -49,6 +51,7 @@ volumes:
     driver: local
 
 -------------------------------------------
+```
 ------------Lab 3-----------------
 
 sudo nano /etc/nginx/nginx.conf
