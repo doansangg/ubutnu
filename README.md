@@ -50,10 +50,10 @@ volumes:
   mongo-data:
     driver: local
 
--------------------------------------------
 ```
 ------------Lab 3-----------------
 
+```
 sudo nano /etc/nginx/nginx.conf
 
 upstream backend {
@@ -74,9 +74,9 @@ server {
         proxy_pass http://localhost:8000;
     }
 }
-
--------------------------------------------
+```
 ------------Lab 3_v2-----------------
+```
 version: "3"
 services:
   client_1:
@@ -116,5 +116,4 @@ networks:
 volumes:
   mongo-data:
     driver: local
------------------------------
--------------------------------------------
+```
